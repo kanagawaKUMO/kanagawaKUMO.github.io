@@ -1,14 +1,69 @@
-baseURL = 'https://kanagawaKUMO.github.io/'
+baseURL = 'https://kanagawaKUMO.github.io/' # 如果有自定义域名请更换
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'kanagawaKUMO's blog'
 theme = "PaperMod"
-[[menu.main]]
-    name = "Archive"
-    url = "/archives"
-    weight = 10
-[[menu.main]]
-    name = "Search"
-    url = "/search"
-    weight = 20
+
+# 开启搜索功能所需的输出格式
 [outputs]
     home = ["HTML", "RSS", "JSON"]
+
+[params]
+    env = "production"
+    title = "kanagawaKUMO's blog"
+    description = "Nope!"
+    author = "kanagawaKUMO"
+
+    # --- 界面风格 ---
+    defaultTheme = "auto"         # 自动跟随系统深浅色
+    ShowReadingTime = true        # 显示阅读时间
+    ShowShareButtons = false      # 社交分享按钮（可选）
+    ShowCodeCopyButtons = true    # 代码块一键复制
+    ShowBreadCrumbs = true        # 显示面包屑导航
+    displayFullContents = false   # 首页只显示摘要
+
+    # --- 首页头像模式 (Profile Mode) ---
+    [params.profileMode]
+        enabled = true 
+        title = "Hello World 👋"
+        subtitle = "这里是我的数字花园，记录技术与生活。"
+        imageUrl = "https://github.com/kanagawaKUMO.png" # 自动拉取GitHub头像
+        imageTitle = "Avatar"
+        [[params.profileMode.buttons]]
+            name = "🔍 搜索"
+            url = "search"
+        [[params.profileMode.buttons]]
+            name = "📚 文章"
+            url = "posts"
+
+    # --- 社交图标 (显示在头像下方) ---
+    [[params.socialIcons]]
+        name = "github"
+        url = "https://github.com/kanagawaKUMO"
+    [[params.socialIcons]]
+        name = "twitter"
+        url = "https://twitter.com/"
+    [[params.socialIcons]]
+        name = "email"
+        url = "mailto:your-email@example.com"
+
+# --- 导航栏菜单 ---
+[[menu.main]]
+    identifier = "posts"
+    name = "博文"
+    url = "/posts/"
+    weight = 10
+[[menu.main]]
+    identifier = "archives"
+    name = "归档"
+    url = "/archives/"
+    weight = 20
+[[menu.main]]
+    identifier = "search"
+    name = "搜索"
+    url = "/search/"
+    weight = 30
+[[menu.main]]
+    identifier = "tags"
+    name = "标签"
+    url = "/tags/"
+    weight = 40
