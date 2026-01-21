@@ -24,8 +24,8 @@ theme = "PaperMod"
     # --- 首页头像模式 (Profile Mode) ---
     [params.profileMode]
         enabled = true 
-        title = "Hello World 👋"
-        subtitle = "这里是我的数字花园，记录技术与生活。"
+        title = "Hi Welcome 👋"
+        subtitle = "随便写点"
         imageUrl = "https://github.com/kanagawaKUMO.png" # 自动拉取GitHub头像
         imageTitle = "Avatar"
         [[params.profileMode.buttons]]
