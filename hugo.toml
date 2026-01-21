@@ -1,6 +1,6 @@
 baseURL = 'https://kanagawaKUMO.github.io/' # 如果有自定义域名请更换
 languageCode = 'en-us'
-title = 'kanagawaKUMO'sblog'
+title = 'blog'
 theme = "PaperMod"
 
 # 开启搜索功能所需的输出格式
@@ -9,7 +9,7 @@ theme = "PaperMod"
 
 [params]
     env = "production"
-    title = "kanagawaKUMO'sblog"
+    title = "blog"
     description = "Nope!"
     author = "kanagawaKUMO"
 
