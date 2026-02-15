@@ -34,11 +34,30 @@ console.log(factorial(5));
 ```
 # 2 数学公式测试
 
-行内公式：$E=mc^2$  
+{{< katex >}}
 
-块级公式：
+### 1. 行內公式
+這是一個行內公式：\\(e^{i\pi} + 1 = 0\\)。
+
+### 2. 獨立公式
+這是一個著名的物理公式：
+
+$$\mathbf{F} = m\mathbf{a}$$
+
+### 3. 複雜公式
 $$
-\int_0^\infty e^{-x^2} dx = \frac{\sqrt{\pi}}{2}
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
 $$
 
+{{< katex >}}
+\(f(a,b,c) = (a^2+b^2+c^2)^3\)
 
+
+
+
+Inline notation: \(\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887…\)
+
+
+$$
+ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
+$$
